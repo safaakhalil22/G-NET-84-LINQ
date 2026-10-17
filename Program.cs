@@ -56,23 +56,23 @@ namespace G_NET_84_LINQ
 
             #region Q5
 
-            var stockInfo = ProductList.Select(p => new
-            {
-                Name = p.ProductName,
-                Price = p.UnitPrice,
-                StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
-            });
+            //var stockInfo = ProductList.Select(p => new
+            //{
+            //    Name = p.ProductName,
+            //    Price = p.UnitPrice,
+            //    StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
+            //});
 
-            stockInfo = from p in ProductList
-                        select new
-                        {
-                            Name = p.ProductName,
-                            Price = p.UnitPrice,
-                            StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
-                        };
+            //stockInfo = from p in ProductList
+            //            select new
+            //            {
+            //                Name = p.ProductName,
+            //                Price = p.UnitPrice,
+            //                StockStatus = p.UnitsInStock > 0 ? "Available" : "Out of Stock"
+            //            };
 
-            foreach (var item in stockInfo)
-                Console.WriteLine(item);
+            //foreach (var item in stockInfo)
+            //    Console.WriteLine(item);
             #endregion
 
             #endregion
