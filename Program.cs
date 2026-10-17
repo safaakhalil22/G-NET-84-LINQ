@@ -42,19 +42,19 @@ namespace G_NET_84_LINQ
             //    Console.WriteLine(product);
             #endregion
 
-            #region Q4 - In stock AND Condiments
+            #region Q4
 
-            var inStockCondiments = ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Spices & Condiments");
+            //var inStockCondiments = ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Spices & Condiments");
 
-            inStockCondiments = from p in ProductList
-                                where p.UnitsInStock > 0 && p.Category == "Spices & Condiments"
-                                select p;
+            //inStockCondiments = from p in ProductList
+            //                    where p.UnitsInStock > 0 && p.Category == "Spices & Condiments"
+            //                    select p;
 
-            foreach (var product in inStockCondiments)
-                Console.WriteLine(product);
+            //foreach (var product in inStockCondiments)
+            //    Console.WriteLine(product);
             #endregion
 
-            #region Q5 - Anonymous type (Name, Price, StockStatus)
+            #region Q5
 
             var stockInfo = ProductList.Select(p => new
             {
