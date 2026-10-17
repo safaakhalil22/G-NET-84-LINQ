@@ -7,16 +7,16 @@ namespace G_NET_84_LINQ
         {
             #region Assignment
 
-            #region Q1 - Seafood products (name and price)
+            #region Q1
 
-            var seafood = ProductList.Where(p => p.Category == "Seafood");
+            //var seafood = ProductList.Where(p => p.Category == "Seafood");
 
-            seafood = from p in ProductList
-                      where p.Category == "Seafood"
-                      select p;
+            //seafood = from p in ProductList
+            //          where p.Category == "Seafood"
+            //          select p;
 
-            foreach (var product in seafood)
-                Console.WriteLine($"{product.ProductName} => {product.UnitPrice:C2}");
+            //foreach (var product in seafood)
+            //    Console.WriteLine($"{product.ProductName} => {product.UnitPrice:C2}");
             #endregion
 
             #region Q2 - Product names only
