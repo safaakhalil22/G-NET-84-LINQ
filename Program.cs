@@ -19,15 +19,15 @@ namespace G_NET_84_LINQ
             //    Console.WriteLine($"{product.ProductName} => {product.UnitPrice:C2}");
             #endregion
 
-            #region Q2 - Product names only
+            #region Q2
 
-            var names = ProductList.Select(p => p.ProductName);
+            //var names = ProductList.Select(p => p.ProductName);
 
-            names = from p in ProductList
-                    select p.ProductName;
+            //names = from p in ProductList
+            //        select p.ProductName;
 
-            foreach (var name in names)
-                Console.WriteLine(name);
+            //foreach (var name in names)
+            //    Console.WriteLine(name);
             #endregion
 
             #region Q3 - UnitPrice between 10 and 30
