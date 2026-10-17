@@ -30,16 +30,16 @@ namespace G_NET_84_LINQ
             //    Console.WriteLine(name);
             #endregion
 
-            #region Q3 - UnitPrice between 10 and 30
+            #region Q3
 
-            var midPriced = ProductList.Where(p => p.UnitPrice >= 10m && p.UnitPrice <= 30m);
+            //var midPriced = ProductList.Where(p => p.UnitPrice >= 10m && p.UnitPrice <= 30m);
 
-            midPriced = from p in ProductList
-                        where p.UnitPrice >= 10m && p.UnitPrice <= 30m
-                        select p;
+            //midPriced = from p in ProductList
+            //            where p.UnitPrice >= 10m && p.UnitPrice <= 30m
+            //            select p;
 
-            foreach (var product in midPriced)
-                Console.WriteLine(product);
+            //foreach (var product in midPriced)
+            //    Console.WriteLine(product);
             #endregion
 
             #region Q4 - In stock AND Condiments
